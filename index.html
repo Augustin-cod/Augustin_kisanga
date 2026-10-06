@@ -16,7 +16,7 @@
     <header class=" flex head">
         <h1> AUGUSTIN <span style="color: #ff6600"> KISANGA</span></h1>
         <div class="nav-link">
-            <nav class="menu">
+            <nav class="menu" id="menu">
                 <a href="#accueil" class="active"> Accueil </a>
                 <a href="#apropos">A propos </a>
                 <a href="#service"> Service </a>
@@ -32,7 +32,7 @@
                     <i class="fa-solid fa-phone"></i>
                 </div>
                 <div class="mobile-menu">
-                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars" id="toggleMenu"></i>
                 </div>
             </div>
 
@@ -51,7 +51,7 @@
                 <p> Développeur Frontend, backend je réalise des interfaces modernes et professionnels. J'apporte des
                     solutions aux problèmes rencotrés grâce à mes compétences en informatique. </p>
                 <div class="btns">
-                    <button class="btn">Voir réalisations</button>
+                    <button class="btn" onclick="window.location.href='#projects'">Voir réalisations</button>
                     <button>Discutons un projet</button>
                 </div>
             </div>
@@ -141,16 +141,37 @@
         </div>
     </section>
 
-    <section>
+    <section class="question">
         <h2>QUELQUES QUESTIONS SUR MOI</h2>
 
-        <div class="cards">
+        <div class="card-questions">
             <div class="cont-quest">
                 <i class="fa-solid fa-house"></i>
                 <div class="question">
-                    <details style="font-size: 20px;">
+                    <details >
                         <summary>comment mes projets arrivent à être accepté et utilisé par les utilisateur</summary>
                         la plus part de fois avant d'accomplir  un projet je cherche à savoir d'abord quels sont les bésoins qu'il doit appporter de solution 
+                    </details>
+                </div>
+            </div>
+            <hr>
+            <div class="cont-quest">
+                <i class="fa-regular fa-house"></i>
+                <div class="question">
+                    <details >
+                        <summary>Comment je travail avec tous les clients qui viennent me voir pour un projet </summary>
+                        l'or du projet avec mon client je me rassure d'abord d'écouter  qu'est ce que mon client veut puis je propose des pistes des solutions valables 
+                    </details>
+                </div>
+            </div>
+            <hr>
+            <div class="cont-quest">
+                <i class="fa-solid fa-house"></i>
+                <div class="question">
+                    <details >
+                        <summary>comment pouvew être en contact avec moi pour travailler sur un projet </summary>
+                        pour me joindre il vous suffira seulement soit par mon portfolion ou sur whatsapp directement. cliquez ici
+                        <a href="https://wa.me/243847668380" target="_blank">+243 847 668 380</a>
                     </details>
                 </div>
             </div>
@@ -164,25 +185,24 @@
         <div class="cards">
             <div class="card-project">
                 <div class="project-img">
-                    <img src="project.png" alt="photo de muvunga service">
+                    <img src="projet/image.png" alt="photo de muvunga service">
                 </div>
                 <div class="desc">
-                    <p>Etablissement Muvunga spécialisé dans la prestation de service et de la vente des matériels
-                        buréautiques </p>
+                    <p>Un site réalisé pour l'Etablissement Muvunga spécialisée dans la vente des matériels buréautiques </p>
+                   <a href="https://muvunga-service.vercel.app" target="_blank" rel="noopener noreferrer"> visité le site  <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <p>visité le projet </p>
 
             </div>
             <div class="card-project">
                 <div class="project-img">
-                    <img src="project.png" alt="photo de muvunga service">
+                    <img src="projet/calculatrice.png" alt="photo de muvunga service">
                     <span></span>
                 </div>
                 <div class="desc">
-                    <p>Etablissement Muvunga spécialisé dans la prestation de service et de la vente des matériels
-                        buréautiques </p>
+                    <p>réalisation d'un projet d'une application de calculatrice pour la version mobile  </p>
+                     <a href="projet/base.apk" download="base.apk">Télecharger maintenant</a>
                 </div>
-                <p>visité le projet </p>
+               
 
             </div>
         </div>
@@ -193,6 +213,7 @@
 
     <section class="savoir" id="savoir">
         <h2>Savoir</h2>
+        <p>voici les differents languages que j'utilse pour  l'accomplissement de  mes projets</p>
         <div class="rounds">
             <div>
                 <div class=" language html">75%</div>
@@ -203,39 +224,40 @@
                 <p> CSS</p>
             </div>
             <div>
-                <div class="language js"> 25%</div>
+                <div class="language js"> 60%</div>
                 <p> JAVA SCRIPT</p>
             </div>
         </div>
-        <div class="rounds">
-            <div>
-                <div class=" language html">75%</div>
-                <p> PHP</p>
-            </div>
-            <div>
-                <div class=" language css"> 60%</div>
-                <p> MySQL</p>
-            </div>
-            <div>
-                <div class="language js"> 25%</div>
-                <p> NODE JS</p>
-            </div>
-        </div>
+       
 
     </section>
 
     <!-- section contact moi-->
 
     <section class="contact" id="contact">
-        <h2 class="title"> contact</h2>
-        <div class="container-contact">
-            <form>
+        <h2> contact</h2>
+        <div class="details">
+            
+            <div class="contact-details">
+                <h3>Discutons plus sur des projets</h3>
+                <p>il est nécessaire de ne pas passer sans avoir laisser  votre nom <br> et votre message pour en savoir plus  </p>
+
+                <h4>ADRESSE</h4>
+                <p>GOMA RDC</p>
+
+                <h4>E-MAIL</h4>
+                <p>christeviepaul371@gmail.com</p>
+
+                <h4>TELEPHONE</h4>
+                <p>+243 847 668 380</p>
+
+
+
+            </div>
+            <form id="contactForm">
                 <div class="input-box">
                     <label for="nom">Nom complet</label>
                     <input type="text" id="nom" required>
-
-                    <label for="email">Adresse mail</label>
-                    <input type="email" id="email" placeholder="E-mail" required>
 
                     <label for="numero">numero Tel</label>
                     <input type="tel" id="numero" required>
@@ -246,23 +268,9 @@
                     <label for="message"> Votre message </label>
                     <textarea id="message" required></textarea>
 
-                    <button> envoyer <i class="fa-solid fa-arrow-right"></i></button>
+                    <button type="submit"> envoyer <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </form>
-            <div class="contact-details">
-                <div class="loction">
-                    <i class="fa-solid fa-location"></i>
-                    <p>République Démocratique du Congo <br>dans la province Nord-Kivu, ville de Goma </p>
-                </div>
-                <div class="emails">
-                    <i class="fa-regular fa-envelope"></i>
-                    <p> contacter moi sur mon adresse mail <br> christeviepaul371@gmail.com</p>
-                </div>
-                <div class="whatsapp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <p>+243 847 668 380 <br> +243 847 668 380</p>
-                </div>
-            </div>
         </div>
     </section>
 

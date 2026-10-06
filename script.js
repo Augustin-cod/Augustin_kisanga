@@ -13,3 +13,44 @@
         btnSombre.style.display ='block'
     }
  }
+ 
+ const form = document.getElementById('contactForm');
+ form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    let nom = document.getElementById('nom').value;
+    let numero = document.getElementById('numero').value;
+    let subjet = document.getElementById('subject').value;
+
+    let message = document.getElementById('message');
+
+    let numeroTel ="243847668380"
+    let text = ` nom{nom} \n numero{numero} \n subject{subject} \n\n message{message}`;
+
+    let url = `https://wa.me/${numeroTel}?text=${text}`
+
+    window.open(url, '_blanck');
+ });
+
+ // responsive design
+
+ const mobileToggle = document.getElementById('toggleMenu');
+
+ mobileToggle.addEventListener('click', menuActive);
+
+ function menuActive () {
+    document.getElementById('menu').classList.toggle('menu-active');
+   
+   const links = document.querySelectorAll('#menu a');
+   
+   for (let a in links){
+    let link = links[a];
+    
+    link.addEventListener('click', function (){
+        document.getElementById('menu').classList.remove('menu-active');
+        console.log(link)
+    });
+ }
+}
+
+ 
