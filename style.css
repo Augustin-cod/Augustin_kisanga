@@ -443,7 +443,7 @@ hr{
     color: var(--text-color);
     line-height: 1.4;
     background-color: var(--desc-color);
-    padding: 10px;
+    padding: 20px 10px;
 }
 .card-project .desc p{
     font-size: 18px;
