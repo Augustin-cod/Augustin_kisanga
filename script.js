@@ -37,7 +37,9 @@
     let message = document.getElementById('message');
 
     let numeroTel ="243847668380"
-    let text = ` nom{nom} \n numero{numero} \n subject{subject} \n\n message{message}`;
+    let text = ` nom${nom} \n numero${numero} \n subject${subject} \n\n message${message}`;
+
+    console.log(text)
 
     let url = `https://wa.me/${numeroTel}?text=${text}`
 
