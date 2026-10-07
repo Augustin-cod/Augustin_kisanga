@@ -34,7 +34,7 @@
     let numero = document.getElementById('numero').value;
     let subjet = document.getElementById('subject').value;
 
-    let message = document.getElementById('message');
+    let message = document.getElementById('message').value;
 
     let numeroTel ="243847668380"
     let text = ` nom${nom} \n numero${numero} \n subject${subject} \n\n message${message}`;
