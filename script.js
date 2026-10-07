@@ -14,6 +14,18 @@
     }
  }
  
+
+ // tous les boutons qui doivent m'amene ves mon whatsapp
+
+ const btnLinks = document.querySelectorAll('.btnLinks');
+ const myName = 'Augustin Kisanga'
+ for (let i =0; i< btnLinks.length; i++ ){
+    btnLinks[i].addEventListener('click', function(){
+        window.location.href=`https://wa.me/243847668380?text=Bonjour%20 ${myName} `
+    })
+ }
+
+
  const form = document.getElementById('contactForm');
  form.addEventListener('submit', function(e){
     e.preventDefault();
